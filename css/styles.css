@@ -1,0 +1,210 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color:rgb(223, 35, 76);
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-bottom: -50px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* header*/
+header{
+    width: 100%;
+    height: 600px;
+    background: #C6FFDD;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(358, 89%, 72%, 0.644), hsla(42, 94%, 75%, 0.651), hsla(144, 100%, 89%, 0.603)),  url(../img/cabecera1.png); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align:right;
+    position:fixed;
+    top: 30px;
+    right: 30px;
+}
+
+nav > a{
+    color: rgb(223, 35, 76);
+    font-weight:  300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration:underline;
+}
+header .textos-header{
+    display:flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.textos-header h1{
+    font-size: 80px;
+    color: rgb(223, 35, 76);
+}
+.textos-header h2{
+    font-size: 40px;
+    font-weight: 300;
+    color: rgb(223, 35, 76);
+}
+.wave{
+position:absolute;
+bottom: 0;
+width: 100%;
+}
+
+/*about as*/
+.contenedor-empresa{
+    display: flex;
+    justify-content:space-evenly;
+}
+.imagen-about-us{
+    width: 48%;
+    padding: auto;
+}
+.contenedor-empresa p{
+    width: 48%;
+    padding: 65px 0px 30px 15px;
+    font-size: 19pt;
+    font-weight: 300;
+    text-align: justify;
+}
+.contenedor-tendencia{
+    display: flex;
+    justify-content:space-evenly;
+}
+.tendencia.contenido-textos{
+    width: 48%;
+}
+.contenido-textos h3{
+    margin-bottom: 60px;
+}
+.contenido-textos h3 span{
+    background: #642a73;
+    color: white;
+    border-radius: 70%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 10px;
+    box-shadow: 0 0 6px 0 rgba(0, 0,0, 0.5);
+}
+.galeria{
+    background:#f2f2f2;
+}
+.galerias{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen{
+    width: 24%;
+    height: 270px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5);
+}
+.imagen >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    transform: scale(0);
+    background:hsl(273, 91%, 27%, 0.7);
+    transition: transform .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria p{
+    color: #fff;
+}
+.imagen:hover .hover-galeria{
+    transform: scale(1);
+}
+.about-popular{
+    background: rgb(226, 224, 224);
+    padding-bottom: 30px;
+}
+.popular-cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popular-marca{
+    width: 28%;
+    text-align: center;
+}
+.popular-marca img{
+    width: 90%;
+}
+.popular-marca h3{
+    margin: 10px 0;
+}
+.contacto{
+    background: darksalmon;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.contenedor-contacto{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+.contenedor-con{
+    text-align: center;
+    
+}
+.contenedor-con h4{
+    color: #fff;
+    border-bottom: 3px solid rgb(235, 120, 120);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.footer{
+    background:rgb(161, 157, 157);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+.final{
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 0 0 0;
+    color: black;
+}
